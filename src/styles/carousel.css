@@ -1,12 +1,11 @@
 .feature-slide {
-    text-align: center;
-    background: white;
+    text-align: left;
     padding: 15px;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
     max-width: 300px;
+
 }
 
 .feature-image {
@@ -16,7 +15,7 @@
 }
 
 .feature-name {
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Montserrat", serif;
     font-weight: 600;
     color: #373737;
@@ -24,10 +23,10 @@
 }
 
 .feature-description {
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Montserrat", serif;
     font-weight: 400;
-    color: #666;
+    color: #373737;
 }
 
 .swiper-button-next,
