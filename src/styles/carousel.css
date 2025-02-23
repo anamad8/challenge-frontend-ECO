@@ -1,0 +1,124 @@
+.feature-slide {
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.feature-name {
+    font-size: 18px;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    color: #373737;
+    margin-top: 10px;
+}
+
+.feature-description {
+    font-size: 14px;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    color: #666;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000 !important;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #373737 !important;
+    opacity: 1;
+}
+
+.custom-slide {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Estilos para responsive (4 cards) */
+@media (min-width: 1200px) {
+    .carousel-container::before,
+    .carousel-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 150px; 
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .carousel-container::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+
+    .carousel-container::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+
+    .swiper-slide:first-child .feature-slide {
+        opacity: 0.5;
+    }
+
+    .swiper-slide:last-child .feature-slide {
+        opacity: 0.5; 
+    }
+}
+
+/* Estilos para responsive (2 o 1 card) */
+@media (max-width: 900px) {
+    .carousel-container::before,
+    .carousel-container::after {
+        display: none; 
+    }
+
+    .swiper-slide .feature-slide {
+        opacity: 1; 
+    }
+}

@@ -1,0 +1,148 @@
+.model--details-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.model-image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 30px
+}
+
+.model-details-title-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.model-name {
+    font-size: 20px;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    color: #373737;
+    margin: 0;
+    
+}
+
+.model-title {
+    font-size: 50px;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    color: #373737;
+    margin: 0;
+}
+
+.model-description {
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    color: #373737;
+    margin-top: 30px;
+    width: 50%;
+
+
+}
+
+.model--details-carousel{
+    background-color: #F7F7F7;
+}
+
+
+.model-highlights {
+    margin-top: 40px;
+    padding: 0 60px;
+}
+
+.highlight-section {
+    margin-bottom: 40px;
+}
+
+.highlight-title {
+    font-size: 20px;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    color: #373737;
+    margin-bottom: 20px;
+}
+
+.highlight-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.highlight-content-text{
+    padding: 5px 70px;
+}
+
+.highlight-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.highlight-text {
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    color: #373737;
+    line-height: 1.6;
+}
+
+.highlight-content-info{
+    display: flex;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .model--details-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 30px;
+        flex-direction: column;
+    }
+
+    .model-description {
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+
+    .model-title {
+        font-size: 35px;
+        
+    }
+
+    .model-highlights{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .highlight-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight-content-text{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .highlight-image {
+        max-width: 100%;
+    }
+
+    .highlight-content-info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+
