@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/HamburgerMenu.css';
+import '../styles/hamburgerMenu.css';
 import { Link } from 'react-router-dom';
 import { GrClose } from "react-icons/gr";
 
